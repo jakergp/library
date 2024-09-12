@@ -1,0 +1,62 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <script src="library.js" defer></script>
+        <title>Library</title>
+    </head>
+    <body>
+        <div id="books">
+            <div class="book new_form" id="new_form">
+                <div class="book_title">New Book</div>
+                <div class="book_details">
+                    <form id="form">
+                        <div>
+                            <label for="title">Title</label><br />
+                            <input
+                                required
+                                type="text"
+                                name="title"
+                                id="title"
+                            /><br />
+                            <label for="author">Author</label><br />
+                            <input
+                                required
+                                type="text"
+                                name="author"
+                                id="author"
+                            /><br />
+                            <label for="pages">Pages</label><br />
+                            <input
+                                required
+                                type="number"
+                                name="pages"
+                                id="pages"
+                            /><br />
+                        </div>
+                        <div>
+                            <p>Have you read this book?</p>
+                            <input
+                                type="radio"
+                                id="yes"
+                                name="read"
+                                value="yes"
+                            />
+                            <label for="yes">Yes</label><br />
+                            <input
+                                type="radio"
+                                id="no"
+                                name="read"
+                                value="no"
+                            />
+                            <label for="no">No</label><br />
+                            <button type="button" id="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <button id="new_book">+</button>
+    </body>
+</html>
